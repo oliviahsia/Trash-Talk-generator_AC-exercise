@@ -1,0 +1,68 @@
+<div class="row justify-content-center">
+  <h1 class="text-dark">你想對誰說幹話？</h1>
+</div>
+
+<div class="container">
+  <form method="POST" action="/">
+    <fieldset class="form-group">
+      <div class="row">
+        <div class="card-deck">
+          <div class="card border-dark mb-3" style="max-width: 25rem;">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+              class="card-img-top img-thumbnail" alt="engineer-image">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="target" id="option1" value="engineer">
+              <label class="form-check-label" for="gridRadios1">
+                工程師
+              </label>
+            </div>
+          </div>
+
+          <div class="card border-dark mb-3" style="max-width: 25rem;">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg"
+              class="card-img-top img-thumbnail" alt="designer-image">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="target" id="option2" value="designer">
+              <label class="form-check-label" for="gridRadios2">
+                設計師
+              </label>
+            </div>
+          </div>
+
+          <div class="card border-dark mb-3" style="max-width: 25rem;">
+            <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg"
+              class="card-img-top img-thumbnail" class="rounded float-right" alt="entrepreneur-image">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="target" id="option3" value="entrepreneur">
+              <label class="form-check-label" for="gridRadios2">
+                創業家
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="form-group row">
+          <div class="col-2">
+            <button type="submit" class="btn btn-primary">產生幹話</button>
+          </div>
+        </div>
+
+        <div class="alert alert-primary col-10 " role="alert">
+
+          {{#if trashTalk}}
+
+          <h3>{{trashTalk}}</h3>
+
+          {{/if}}
+
+        </div>
+
+      </div>
+
+    </fieldset>
+  </form>
+
+</div>
